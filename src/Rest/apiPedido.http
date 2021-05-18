@@ -1,0 +1,82 @@
+GET http://localhost:3000/pedido/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/pedido
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/pedido?nombre_like=ped
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/pedido?idUsuario=1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/pedido/
+Content-Type: application/json
+
+{
+    "idUsuario": 1,
+    "nombre": "Pedido 1",
+    "fecha": "12/12/2020",
+    "articulos": [
+      {
+        "id": 1,
+        "cantidad": 10
+      },
+      {
+        "id": 2,
+        "cantidad": 1
+      },
+      {
+        "id": 3,
+        "cantidad": 2
+      },
+      {
+        "id": 3,
+        "cantidad": 1
+      }
+    ]
+  }
+
+###
+
+PUT http://localhost:3000/pedido/2
+Content-Type: application/json
+
+{
+    "idUsuario": 1,
+    "nombre": "Pedido 1",
+    "fecha": "12/12/2020",
+    "articulos": [
+      {
+        "id": 1,
+        "cantidad": 10
+      },
+      {
+        "id": 2,
+        "cantidad": 1
+      },
+      {
+        "id": 3,
+        "cantidad": 2
+      },
+      {
+        "id": 3,
+        "cantidad": 1
+      }
+    ]
+  }
+
+###
+
+DELETE http://localhost:3000/pedido/2
+Content-Type: application/json
+
+###

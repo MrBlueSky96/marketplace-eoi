@@ -1,0 +1,13 @@
+<section class="container">
+
+    <label>Nombre Pedido</label>
+    <input class="form-control" type="text" [(ngModel)]="nombrePedido" (ngModelChange)="onChange()">
+
+    <article class="pedContainer row">
+        <div *ngFor ="let pedido of listaPedidos">
+            <app-tarjeta-pedido [ped] = "pedido"></app-tarjeta-pedido>
+        </div>
+        
+    </article>
+
+</section>

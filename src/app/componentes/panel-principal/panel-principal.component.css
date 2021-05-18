@@ -1,0 +1,36 @@
+.selectedLink {
+    background-color: rgba(20, 19, 19, 0.445);
+}
+
+.selectedButton {
+    background-color: #007BFF;
+    color: white;
+}
+
+.cantidad {
+   background-color: red;
+   margin-top: 8px;
+   text-align: center;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 75px;
+}
+
+.btnContainer button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.salir {
+    cursor: pointer;
+}

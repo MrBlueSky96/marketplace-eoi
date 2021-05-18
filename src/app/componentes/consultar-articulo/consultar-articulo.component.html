@@ -1,0 +1,15 @@
+<section class="container">
+
+    <label>Nombre Artículo</label>
+    <input class="form-control" type="text" [(ngModel)]="artConsulting" (ngModelChange)="artConsulting = $event"
+        (ngModelChange)="modelChanged($event)">
+
+    <article class="artContainer">
+        <section *ngFor="let art of listaArticulos">
+
+            <app-tarjeta-articulo [art]="art" [mapa]=mapa></app-tarjeta-articulo>
+
+        </section>
+    </article>
+
+</section>

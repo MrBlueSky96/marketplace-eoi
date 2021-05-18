@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label for="">Nombre usuario</label>
+    <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="userName" (ngModelChange)="onChange()">
+</div>
+<section class="row">
+    <div class="col col-3" *ngFor="let user of listaUsuarios">
+        <app-tarjeta-usuario [user]= "user"></app-tarjeta-usuario>
+    </div>
+</section>

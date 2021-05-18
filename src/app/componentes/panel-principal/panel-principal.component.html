@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand nav-link" routerLink="">
+    <img src="../../../assets/logoMP.png" width="45" height="40" class="d-inline-block align-center" alt="">
+    MarketPlace EOI G1
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a routerLink="/usuarios" routerLinkActive="selectedLink" [routerLinkActiveOptions]="{exact:true}"
+          class="nav-link">
+          Usuarios <p class="cantidad">{{numberOfUsers}}</p>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/articulos" routerLinkActive="selectedLink" [routerLinkActiveOptions]="{exact:true}"
+          class="nav-link">
+          Artículos <p class="cantidad">{{numberOfArticles}}</p>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/pedidos" routerLinkActive="selectedLink" [routerLinkActiveOptions]="{exact:true}"
+          class="nav-link">
+          Pedidos <p class="cantidad">{{numberOfOrders}}</p>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link">Usuario: {{loggedUserName}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link salir" (click)="logout()">Salir</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<section class="btnContainer">
+  <a routerLink="/usuarios">
+    <button class="btn btn-outline-primary" routerLinkActive="selectedButton" [routerLinkActiveOptions]="{exact:true}">Usuarios</button>
+  </a>
+
+  <a routerLink="/articulos">
+    <button class="btn btn-outline-primary" routerLinkActive="selectedButton" [routerLinkActiveOptions]="{exact:true}">Artículos</button>
+  </a>
+
+  <a routerLink="/pedidos">
+    <button class="btn btn-outline-primary" routerLinkActive="selectedButton" [routerLinkActiveOptions]="{exact:true}">Pedidos</button>
+  </a>
+</section>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,44 @@
+GET http://localhost:3000/articulo/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/articulo
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/articulo?nombre_like=Mass
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:3000/articulo/
+Content-Type: application/json
+
+{
+    
+    "nombre":"articulo1",
+    "precio":"50",
+    "stock":"150"
+}
+
+###
+
+PUT http://localhost:3000/articulo/2
+Content-Type: application/json
+
+{
+    "nombre":"articulo1",
+    "precio":"50",
+    "stock":"150"
+}
+
+###
+
+DELETE http://localhost:3000/articulo/2
+Content-Type: application/json
+
+
+###
